@@ -46,7 +46,7 @@ public class DataSeeder implements ApplicationRunner {
                 }
             }
         } catch (Exception e) {
-            log.warn("No se pudieron crear los usuarios de prueba: {}", e.getMessage());
+            log.error("No se pudieron crear los usuarios de prueba", e);
         }
     }
 }

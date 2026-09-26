@@ -28,7 +28,7 @@ public class CierreScheduler {
                 service.notificarCierre(c);
             }
         } catch (Exception e) {
-            log.warn("No se pudo ejecutar el cierre de subastas: {}", e.getMessage());
+            log.error("No se pudo ejecutar el cierre de subastas", e);
         }
     }
 }
